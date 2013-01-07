@@ -1,0 +1,110 @@
+/*Global*/
+body{
+	width: 100%;
+	background: url(../img/CuernosTorresDelPaine.png) 0 0 no-repeat;
+	font-family:'Raleway',helvetica,arial,sans-serif;
+	color:#343333;
+}
+
+::selection { 
+	background: #0096db; 
+	color: #E7E5E2; /* Safari 3.1+, Opera 9.5+, Chrome 2+ */
+} 
+
+::-moz-selection{ 
+	background: #0096db; 
+	color: #E7E5E2; /* Mozilla Firefox */
+} 
+
+
+/*Header Elements*/
+#header{
+	background: url(../img/slantedLinesWhiteTransparent.png) 0 0 repeat;
+	height: 100px;
+}
+
+#logo-container{
+	display:inline-block;
+	float:left;
+	margin-top:35px;
+}
+
+#menu-container{
+	display: inline-block;
+	float: right;
+}
+
+.nav-container{
+	display: inline-block;
+	height: 70px;
+	width: 80px;
+	border-radius: 5px;
+	margin-top:15px;
+	cursor: pointer;
+	margin-left: 10px;
+	transition: background-color 400ms ease, color 100ms ease;
+}
+
+.nav-container:hover{
+	background: #0096db;
+	color: #e7e5e2
+}
+
+.nav-icon-container{
+	display: block;
+	height:40px;
+	width:50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 7px;
+}
+
+#nav-icon-home{
+	background:url(../img/iconHome.png) 0 0 no-repeat;
+}
+
+#nav-icon-projects{
+	background:url(../img/iconLightning.png) 13px 0 no-repeat;
+}
+
+#nav-icon-travel{
+	background:url(../img/iconAirplane.png) 4px 0 no-repeat;
+}
+
+#nav-icon-contact{
+	background:url(../img/iconPhone.png) 3px 0 no-repeat;
+}
+
+.nav-text{
+	font-size: 14px;
+	text-align: center;
+	display: block;
+	margin-top: 2px;
+}
+
+.nav-selected{
+	background: #0096db;
+	color: #e7e5e2
+}
+
+#nav-1{
+	margin-left: 0px;
+}
+
+/*Main Content Area*/
+#main-content-container{
+	margin-top: 45px;
+	background: url(../img/CajonDelMaipoAlecProfile.png) 507px 0 no-repeat;
+}
+
+#main-content-text-title{
+	font-size: 76px;
+	font-weight: 900;
+	line-height: 100px;
+}
+
+#main-content-text-paragraph{
+	font-size:34px;
+	font-weight:300;
+	line-height: 40px;
+}
