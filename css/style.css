@@ -1,9 +1,11 @@
 /*Global*/
 body{
 	width: 100%;
-	background: url(../img/CuernosTorresDelPaine.png) 0 0 no-repeat;
-	font-family:'Raleway',helvetica,arial,sans-serif;
-	color:#343333;
+	background: url(../img/CuernosTorresDelPaine.png) 50% 0 no-repeat #BED1F4;
+	font-family: 'Raleway',helvetica,arial,sans-serif;
+	color: #343333;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 ::selection { 
@@ -21,6 +23,8 @@ body{
 #header{
 	background: url(../img/slantedLinesWhiteTransparent.png) 0 0 repeat;
 	height: 100px;
+	position: fixed;
+	width: 100%;
 }
 
 #logo-container{
@@ -43,11 +47,14 @@ body{
 	cursor: pointer;
 	margin-left: 10px;
 	transition: background-color 400ms ease, color 100ms ease;
+	-moz-transition: background-color 400ms ease, color 100ms ease;
+	-webkit-transition: background-color 400ms ease, color 100ms ease;
+	-o-transition: background-color 400ms ease, color 100ms ease; 
 }
 
 .nav-container:hover{
 	background: #0096db;
-	color: #e7e5e2
+	color: #e7e5e2;
 }
 
 .nav-icon-container{
@@ -73,6 +80,7 @@ body{
 
 #nav-icon-contact{
 	background:url(../img/iconPhone.png) 3px 0 no-repeat;
+	overflow: visible;
 }
 
 .nav-text{
@@ -91,9 +99,19 @@ body{
 	margin-left: 0px;
 }
 
+.deactivated{
+	opacity: .5;
+	cursor: default;
+}
+
+.deactivated:hover{
+	background-color: rgba(255,0,0,0);
+	color: #343333;
+}
+
 /*Main Content Area*/
 #main-content-container{
-	margin-top: 45px;
+	margin-top: 145px;
 	background: url(../img/CajonDelMaipoAlecProfile.png) 507px 0 no-repeat;
 }
 
@@ -107,4 +125,132 @@ body{
 	font-size:34px;
 	font-weight:300;
 	line-height: 40px;
+}
+
+/*Contact Box*/
+#contact-box-wrapper{
+	display: none;
+	cursor: default;
+}
+
+#triangle{
+	margin-top: 10px;
+	right: -20px;
+	position: relative;
+	top: 2px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 20px 20px 20px;
+	border-color: transparent transparent #343333 transparent;
+}
+
+#contact-information-container{
+	background: url("../img/contact-background.png") no-repeat scroll 0 0 transparent;
+  display: block;
+  height: 180px;
+  padding: 20px;
+  position: relative;
+  right: 316px;
+  top: 8px;
+  width: 370px;
+}
+
+#contact-text{
+	color: #E7E5E2;
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 22px;
+  padding-top: 31px;
+  position: absolute;
+}
+
+#social-contact-container{
+	position: absolute;
+	margin-left: 37px;
+}
+
+.social-icon{
+	display: inline-block;
+	float: left;
+	height: 54px;
+	width: 54px;
+	margin-right: 20px;
+	margin-top: 15px;
+	margin-bottom:10px;
+}
+
+#social-icon-mail{
+	background: url(../img/social-icon-mail.png) 0 0 no-repeat;
+	transition: margin-top 400ms ease;
+	-moz-transition: margin-top 400ms ease;
+	-webkit-transition: margin-top 400ms ease;
+	-o-transition: margin-top 400ms ease;
+}
+
+#social-icon-mail:hover{
+	margin-top: -1px;
+	padding-top: 20px;
+}
+
+#social-icon-linkedin{
+	background: url(../img/social-icon-linkedin.png) 0 0 no-repeat;
+	transition: margin-top 400ms ease;
+	-moz-transition: margin-top 400ms ease;
+	-webkit-transition: margin-top 400ms ease;
+	-o-transition: margin-top 400ms ease;
+}
+
+#social-icon-linkedin:hover{
+	margin-top: -1px;
+	padding-top: 20px;
+}
+
+#social-icon-500px{
+	background: url(../img/social-icon-500px.png) 0 0 no-repeat;
+	transition: margin-top 400ms ease;
+	-moz-transition: margin-top 400ms ease;
+	-webkit-transition: margin-top 400ms ease;
+	-o-transition: margin-top 400ms ease;
+}
+
+#social-icon-500px:hover{
+	margin-top: -1px;
+	padding-top: 20px;
+}
+
+#social-icon-twitter{
+	background: url(../img/social-icon-twitter.png) 0 0 no-repeat;
+	margin-right: 0px;
+	transition: margin-top 400ms ease;
+	-moz-transition: margin-top 400ms ease;
+	-webkit-transition: margin-top 400ms ease;
+	-o-transition: margin-top 400ms ease;
+}
+
+#social-icon-twitter:hover{
+	margin-top: -1px;
+	padding-top: 20px;
+}
+
+#social-icon-text-container{
+	margin-left: 37px;
+	margin-top: 50px;
+}
+
+.social-icon-text{
+	display: inline-block;
+	float: left;
+	height: 16px;
+	width: 54px;
+	margin-right: 20px;
+	font-size: 12px;
+	text-align: center;
+}
+
+#social-icon-text-last{
+	margin-right: 0px;
 }
