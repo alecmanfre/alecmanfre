@@ -12,23 +12,24 @@
 		<link rel="stylesheet" href="css/style.css" type="text/css">
 
 	<!-- Fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,900' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600,900' rel='stylesheet' type='text/css'>
 
 	<!-- Scripts -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript"src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA01zdCDGVUDJsmBWpPTVh03Tzes6jNP4Q&sensor=false"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="js/script.js" type="text/javascript"></script>
 </head>
 
-<body id="index">
-	<div class="header" id="index-header">
+<body id="travel" onload="initialize()">
+	<div id="travel-header" class="header">
 		<div class="container">
 			<a id="logo-container" href="#">
 				<img id="alec-manfre-logo" src="img/AlecManfreLogo.png" alt="Alec Lawrence Manfre"></img>
 			</a>
 
 			<div id="menu-container">
-				<a id="nav-1" class="nav-container nav-selected">
+				<a id="nav-1" class="nav-container" href="./index.html">
 					<div id="nav-icon-home" class="nav-icon-container">
 					</div>
 					<div class="nav-text">
@@ -44,13 +45,13 @@
 					</div>
 				</a>
 
-				<a class="nav-container" href="./travel.html">
+				<div class="nav-container nav-selected">
 					<div id="nav-icon-travel" class="nav-icon-container">
 					</div>
 					<div class="nav-text">
 						Travel
 					</div>
-				</a>
+				</div>
 
 				<div id="nav-contact-container" class="nav-container">
 					<div id="nav-contact-wrapper">
@@ -93,15 +94,27 @@
 		</div>
 	</div>
 
+<div id="map_canvas"></div>		
 	<div class="container">
-		<div id="main-content-container" class="row-fluid">
-			<div id="main-content-text" class="span8">
-				<div id="main-content-text-title">
-					Ahoy!
-				</div>
-				<div id="main-content-text-paragraph">
-					I am an Atlanta based entrepreneur, engineer, web developer, hardware developer, and energy enthusiast. I am co-founder and CEO of Bractlet where I lead the execution of our vision and hardware development. When not helping to lower carbon emissions, I play golf and tennis, do photography, and travel...next trip New Zealand!
-				</div>
+		<div id="travel-info-container">
+			<div id="travel-info-quote">
+				"A journey of a thousand miles begins with a single step."
+				<div id="quote-author">-Lao-tzu</div>
+			</div>
+			<div id="travel-info-title">
+				Snapshot of my trips:
+			</div>
+			<div id="travel-info-text-container">
+				<ul id="travel-info-text">
+					<li class="travel-info-list"><span class="travel-numbers">19</span> countries journeyed</li>
+					<li class="travel-info-list"><span class="travel-numbers">71,000</span> miles traversed</li>
+					<li class="travel-info-list"><span class="travel-numbers">72</span> cities experienced</li>
+					<li class="travel-info-list"><span class="travel-numbers">10,475</span> pictures captured</li>
+				</ul>
+			</div>
+			<div id="travel-info-tab">
+			<div id="travel-info-tab-icon">
+				<i class="icon-white icon-chevron-left"></i>
 			</div>
 		</div>
 	</div>

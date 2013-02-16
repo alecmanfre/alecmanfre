@@ -1,11 +1,36 @@
 /*Global*/
-body{
+#index{
 	width: 100%;
-	background: url(../img/CuernosTorresDelPaine.png) 50% 0 no-repeat #BED1F4;
+	background-image: url(../img/CuernosTorresDelPaine.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-color: #BED1F4;
 	font-family: 'Raleway',helvetica,arial,sans-serif;
 	color: #343333;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#projects{
+	width: 100%;
+	background-image: url(../img/projects-background.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-color: #A3A3A1;
+	font-family: 'Raleway',helvetica,arial,sans-serif;
+	color: #343333;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#travel{
+	width: 100%;
+	height: 100%;
+	background: url(../img/slantedLinesWhite.png) 0 0 repeat;
+	font-family: 'Raleway',helvetica,arial,sans-serif;
+	color: #343333;
 }
 
 ::selection { 
@@ -18,19 +43,44 @@ body{
 	color: #E7E5E2; /* Mozilla Firefox */
 } 
 
+a:hover{
+	text-decoration: none;
+}
 
 /*Header Elements*/
-#header{
+.header{
 	background: url(../img/slantedLinesWhiteTransparent.png) 0 0 repeat;
 	height: 100px;
 	position: fixed;
 	width: 100%;
+	z-index: 999;
+}
+
+#index-header{
+	-webkit-box-shadow: 0px 1px 13px -4px #343333;
+	box-shadow: 0px 1px 13px -4px #343333;
+}
+
+#projects-header{
+	-webkit-box-shadow: 0px 1px 13px -4px #343333;
+	box-shadow: 0px 1px 13px -4px #343333;
+}
+
+#travel-header{
+	background-color: rgba(240, 240, 240, .35);
+	-webkit-box-shadow: 0px 1px 13px -4px #343333;
+	box-shadow: 0px 1px 13px -4px #343333;
+}
+
+.text-scroll-background{
+	transition: background-color 400ms ease, color 100ms ease;
+	background-color: rgba(255, 255, 250, 0);
 }
 
 #logo-container{
-	display:inline-block;
+	display: inline-block;
 	float:left;
-	margin-top:35px;
+	margin-top: 35px;
 }
 
 #menu-container{
@@ -55,6 +105,7 @@ body{
 .nav-container:hover{
 	background: #0096db;
 	color: #e7e5e2;
+	text-decoration: none;
 }
 
 .nav-icon-container{
@@ -88,6 +139,12 @@ body{
 	text-align: center;
 	display: block;
 	margin-top: 2px;
+	text-decoration: none;
+	color: #343333;
+}
+
+.nav-text:hover{
+	text-decoration: none;
 }
 
 .nav-selected{
@@ -253,4 +310,174 @@ body{
 
 #social-icon-text-last{
 	margin-right: 0px;
+}
+
+/*Projects*/
+#projects-title{
+	font-weight: 900;
+	font-size: 76px;
+	line-height: 100px;
+	color: #343333;
+	margin-top: 120px;
+}
+
+#projects-sub-title{
+	font-weight: 200;
+	font-size: 22px;
+	line-height: 26px;
+}
+
+#projects-box-container{
+	margin-top: 20px;
+}
+
+.project-box-column-right{
+	text-align: right;
+}
+
+.project-box{
+	border: 1px solid #343333;
+  border-radius: 5px;
+  display: inline-block;
+  height: 457px;
+  margin-bottom: 20px;
+  width: 457px;
+}
+
+.project-box-text-container{
+	position: relative;
+	border: 1px solid #343333;
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+	text-align: left;
+	opacity: 0;
+	background: rgba(255, 250,250, 0.0);
+	transition: opacity 400ms ease;
+	-moz-transition: opacity 400ms ease;
+	-webkit-transition: opacity 400ms ease;
+	-o-transition: opacity 400ms ease; 
+}
+
+.project-box-text-container:hover{
+	opacity: 1.0;
+	background: rgba(0, 0, 0, .8);
+}
+
+.project-box-title{
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: 600;
+	padding: 20px 20px 0px 20px;
+	color: #E7E5E2;
+}
+
+.project-box-text{
+	font-size: 18px;
+	line-height: 24px;
+	padding: 0px 20px 0px 20px;
+	margin-top: 10px;
+	color: #E7E5E2;
+	font-weight: 200;
+}
+
+.project-box-header{
+	font-weight: 600;
+}
+
+#manfre4sheriff{
+	background: url(../img/manfre-for-sheriff.png) 0 0 no-repeat;
+}
+
+#bractlet-static{
+	background: url(../img/bractlet-static-site.png) 0 0 no-repeat;
+}
+
+#arduino-control{
+	background: url(../img/arduino.png) 0 0 no-repeat;
+}
+
+#trello-biz-canvas{
+	background: url(../img/biz-model-canvas.png) 0 0 no-repeat;
+}
+
+/*Travel*/
+#map_canvas{
+	height: 100%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#travel-info-container{
+	background: url(../img/darkTexture.png) 0 0 repeat;
+	border-radius: 0px 10px 10px 0px;
+	display: inline-block;
+	padding: 20px;
+	position: fixed;
+	top: 140px;
+	color: #e7e5e2;
+	width: 301px;
+	left: 0px;
+	-webkit-box-shadow: 0px 1px 13px -4px #343333;
+	box-shadow: 0px 1px 13px -4px #343333;
+}
+
+#travel-info-tab{
+	background: url("../img/darkTexture.png") repeat scroll 0 0 transparent;
+  border-radius: 0 10px 10px 0;
+  height: 42px;
+  left: 320px;
+  position: absolute;
+  top: 0px;
+  width: 50px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 1px 13px -4px #343333;
+	box-shadow: 0px 1px 13px -4px #343333;
+}
+
+#travel-info-tab-icon{
+	width: 30px;
+	height: 30px;
+	display: block;
+	z-index: 100;
+	margin-top: 13px;
+	margin-left: 27px;
+}
+
+#travel-info-quote{
+	font-size: 28px;
+	font-weight: 200;
+	line-height: 34px;
+	text-align: left;
+}
+
+#quote-author{
+	text-align: left;
+	font-size: 20px;
+	font-style: italic;
+}
+
+#travel-info-title{
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+	margin-top: 10px;
+}
+
+#travel-info-text{
+	list-style: none;
+}
+
+.travel-info-list{
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.travel-numbers{
+	font-size: 34px;
+	font-weight: 900;
+	line-height: 38px;
 }
